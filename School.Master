@@ -1,0 +1,48 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="School.master.cs" Inherits="School.School" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <link  href="myStyles.css" rel="stylesheet" />
+    <title>School DataBase</title>
+    <style>
+    .navbar {
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .nav-link {
+        padding: 10px 20px;
+        text-decoration: none;
+        color: #333;
+        background-color: #f5f5f5; 
+        border: 1px solid #ccc; 
+        border-radius: 5px; 
+        margin: 5px; 
+    }
+</style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+        
+
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="whole-panel">
+            <div class="toppanel">
+                <br />
+                <div><p class="text-center bolder-and-bigger">Welcome to School</p></div>
+                <div class="navbar">
+                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Student.aspx" CssClass="nav-link">Student</asp:HyperLink>
+                    <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Teacher.aspx" CssClass="nav-link">Teacher</asp:HyperLink>
+                    <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/Course.aspx" CssClass="nav-link">Course</asp:HyperLink>
+                </div>
+            </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,13 @@
+﻿body {
+}
+.text-center{
+    text-align:center;
+}
+.toppanel{
+    background-color:cadetblue;
+    color:cornsilk;
+}
+.bolder-and-bigger{
+    font-size:40px;
+    font-weight:bolder;
+}
